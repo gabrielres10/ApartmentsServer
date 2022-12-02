@@ -1,0 +1,89 @@
+.root {
+    -fx-background-color: #222;
+    -fx-background-radius: 28.0;
+}
+
+.mainPane {
+	
+    -fx-background-color: linear-gradient(to bottom right, #FF7F50, #6A5ACD);
+    -fx-background-radius: 15.0 15.0 25.0 25.0;
+
+}
+
+.button {
+
+    -fx-background-color: #00000025;
+    -fx-border-color: #00000050;
+    -fx-border-width: 0.0 1.5 1.5 0.0;
+    -fx-border-radius: 15.0;
+    -fx-background-radius: 15.0;
+    -fx-font-family: consolas;
+    -fx-text-fill: c0c0c0;
+    -fx-text-alignment: center;
+    -fx-font-size: 24.0; 
+    -fx-font-weight: bolder;
+}
+
+
+.button:hover{	
+	
+	-fx-cursor: hand;
+	-fx-background-color: #00000050;
+    -fx-border-color: #00000075;
+    
+}
+
+.button:pressed{
+	
+	-fx-border-width: 0;
+	-fx-translate-x: 1.5;
+	-fx-translate-y: 1.5;
+	-fx-background-color: #00000035;
+    -fx-border-color: #00000060;
+    
+}
+
+
+.textField{
+	
+	-fx-background-color: #00000025;
+	-fx-background-radius: 0.0;
+	-fx-border-radius: 0.0;
+	-fx-border: false;
+	-fx-font-family: consolas;
+	-fx-font-weight: bold;
+    -fx-text-fill: c0c0c0;
+    -fx-alignment: center;
+    -fx-font-size: 24.0;
+    -fx-focus-traversable: false;
+    
+}
+
+.textField:hover{
+	-fx-background-color: #00000050;
+    -fx-border-color: #00000075;
+    -fx-border-width: 0 0 1 0;
+}
+
+.textField:focused{
+	-fx-background-color: #00000035;
+    -fx-border-color: #00000060;
+    -fx-border-width: 0 0 1 0;
+    
+}
+
+.commonLabel{
+	-fx-font-family: consolas;
+    -fx-font-size: 24.0; 
+    -fx-font-weight: bolder;
+}
+
+.pageTittleLabel{
+	-fx-font-family: consolas;
+    -fx-font-color: #ffffff;
+    -fx-font-size: 12;
+}
+
+.menuBTN:hover{
+	-fx-cursor: hand;
+}

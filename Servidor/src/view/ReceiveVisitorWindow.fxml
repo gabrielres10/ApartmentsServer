@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="30.0" prefHeight="370.0" prefWidth="600.0" styleClass="mainPane">
+         <children>
+            <Label layoutX="173.0" layoutY="93.0" styleClass="commonLabel" text="Name:" />
+            <TextField fx:id="nameTF" layoutX="244.0" layoutY="85.0" promptText="Visitor name" styleClass="textField" />
+            <Label layoutX="168.0" layoutY="138.0" styleClass="commonLabel" text="Choose the apartment" />
+            <ChoiceBox fx:id="apartmentCB" layoutX="221.0" layoutY="180.0" prefWidth="150.0" styleClass="textField" />
+            <Button fx:id="notifyBTN" layoutX="238.0" layoutY="268.0" mnemonicParsing="false" onAction="#notify" text="Notify">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="222.0" layoutY="27.0" styleClass="commonLabel" text="NEW VISITOR">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="mainP" layoutX="-1.0" layoutY="5.0" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="closeBTN" fitHeight="20.0" fitWidth="20.0" layoutX="566.0" layoutY="1.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" styleClass="menuBTN">
+               <image>
+                  <Image url="@../images/cancel.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minimizeBTN" fitHeight="20.0" fitWidth="20.0" layoutX="535.0" layoutY="1.0" onMouseClicked="#minimizeWindow" pickOnBounds="true" preserveRatio="true" styleClass="menuBTN">
+               <image>
+                  <Image url="@../images/minimize.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="pageTittleLB" layoutX="45.0" layoutY="2.5" styleClass="pageTittleLabel" text="New Visitor" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

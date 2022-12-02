@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ApartmentTerminalWindow">
+   <children>
+      <Pane layoutY="30.0" prefHeight="370.0" prefWidth="600.0" styleClass="mainPane">
+         <children>
+            <Label layoutX="181.0" layoutY="52.0" styleClass="commonLabel" text="Apartment Terminal">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="chatBTN" layoutX="164.0" layoutY="139.0" mnemonicParsing="false" onAction="#chat" text="Chat with a friend">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="panicBTN" layoutX="250.0" layoutY="225.0" mnemonicParsing="false" onAction="#panic" text="Panic">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="mainP" layoutY="5.0" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="closeBTN" fitHeight="20.0" fitWidth="20.0" layoutX="566.0" layoutY="1.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" styleClass="menuBTN">
+               <image>
+                  <Image url="@../images/cancel.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minimizeBTN" fitHeight="20.0" fitWidth="20.0" layoutX="535.0" layoutY="1.0" onMouseClicked="#minimizeWindow" pickOnBounds="true" preserveRatio="true" styleClass="menuBTN">
+               <image>
+                  <Image url="@../images/minimize.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="pageTittleLB" layoutX="45.0" layoutY="2.5" styleClass="pageTittleLabel" text="Apartment Terminal" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
